@@ -1,0 +1,30 @@
+<p>login works!</p>
+<form [formGroup]="loginForm">
+ <div> <input 
+    type="text" 
+    name="usuario"  
+    [formControl]="loginForm.controls.usuario" 
+   />
+      
+</div>
+<div *ngIf="user=='' and submited==1">
+   <small>Debe escribir el nombre de usuario</small> 
+   </div>
+
+   <div>
+    <input 
+    type="password" 
+    name="password"  
+    [formControl]="loginForm.controls.password"
+
+    />
+   </div> 
+   <div *ngIf="pwd=='' and submited==1">
+<small> Debe escribir el password</small> 
+   </div>
+  <button 
+  type="submit" 
+  (click)="verificaUsuario()" >Login</button>
+</form>
+
+
