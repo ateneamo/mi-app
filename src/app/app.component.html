@@ -8,8 +8,11 @@
     <div class="left-side">
      
       <h1>{{ title }}</h1>
- <app-login>
- </app-login>
+      <div *ngIf="!login">
+        <app-login (tic)="logged($event)">
+        </app-login>
+      </div>
+ 
      
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>

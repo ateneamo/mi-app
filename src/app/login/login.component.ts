@@ -1,11 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 import { FormControl, FormGroup ,FormsModule, ReactiveFormsModule} from '@angular/forms'
 import { CommonModule } from '@angular/common';
 import { Validators } from '@angular/forms';
+import { Router, RouterModule } from '@angular/router'
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, CommonModule],
+  imports: [FormsModule,
+     ReactiveFormsModule, 
+     CommonModule, 
+     RouterModule,
+      
+    ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
@@ -15,7 +21,7 @@ export class LoginComponent {
   valUser:number=0;
   valPwd: number=0;
   submited:number=0;
-
+  @Output() tic = new EventEmitter<any>();
  
 
   loginForm  = new FormGroup({
@@ -28,9 +34,13 @@ export class LoginComponent {
       Validators.required
     ])
   });
-  constructor() { }
+  constructor (private router: Router) { }
+ 
+
   ngOnInit() {
-  }
+          
+      }
+
   verificaUsuario():void{
   
     this.submited=1;
@@ -52,6 +62,9 @@ export class LoginComponent {
     && this.loginForm.controls.password.value == "123")
     {
       alert("Bienvenido al sistema");
+      //this.router.navigateByUrl('app-tic');
+      this.router.navigate(['/app-tic']);
+      this.tic.emit(1) ;
     }else{
       alert("Usuario o contraseña incorrectos");
     }
