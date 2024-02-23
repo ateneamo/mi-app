@@ -1,1 +1,1106 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+html,
+body {
+    height     : 100%;
+    margin     : 0;
+    font-family: 'Manrope', sans-serif, Roboto, "Helvetica Neue", sans-serif !important;
+}
+
+.cdk-overlay-container,
+.cdk-overlay-pane {
+    z-index: 9999 !important;
+}
+
+
+/* Texto */
+
+.text-xch {
+    font-size: 9px;
+}
+
+
+/* Cursor */
+
+.c-pointer {
+    cursor: pointer !important;
+}
+
+
+/* Icon angular align*/
+
+.icon-mat-align {
+    vertical-align: middle !important;
+}
+
+
+/* Colores */
+
+.bg-blanco {
+    background: white !important;
+    color     : black !important;
+}
+
+.bg-verde {
+    background: MediumSeaGreen !important;
+    color     : white !important;
+}
+
+.bg-aqua {
+    background: MediumAquamarine !important;
+    color     : white !important;
+}
+
+.bg-azul {
+    background: DodgerBlue !important;
+    color     : white !important;
+}
+
+.bg-rojo {
+    background: Crimson !important;
+    color     : white !important;
+}
+
+.bg-gris {
+    background: DarkGray !important;
+    color     : white !important;
+}
+
+.bg-azulcl {
+    background: DeepSkyBlue !important;
+    color     : white !important;
+}
+
+.bg-amarillo {
+    background: gold !important;
+    color     : black !important;
+}
+
+.bg-header-modal {
+    color     : #fff;
+    background: #343a40 linear-gradient(180deg, #52585d, #343a40) repeat-x !important;
+}
+
+.bg-rosa{
+    background-color: pink;
+  }
+
+
+/* Titulos */
+
+.titulo-1 {
+    font-size: 1rem !important;
+}
+
+.titulo-2 {
+    font-size: 0.875rem !important;
+}
+
+.titulo-3 {
+    font-size: 0.813rem !important;
+}
+
+.titulo-4 {
+    font-size: 0.75rem !important;
+}
+
+.titulo-5 {
+    font-size: 0.6rem;
+}
+
+.texto-justificado {
+    text-align: justify !important;
+}
+
+
+/* Tablas */
+
+.bg-tabla {
+    background-color: #4385ef !important;
+    color           : white !important;
+}
+
+
+/* buscador/crm */
+
+.barra-busqueda {
+    position: relative;
+    width   : 100%;
+}
+
+.barra-busqueda input {
+    width        : 100%;
+    border       : none;
+    background   : #ffffff;
+    color        : rgba(0, 0, 0, 0.7);
+    height       : 30px;
+    border-radius: 100px;
+    padding      : 0 20px 0 40px;
+    font-size    : 0.8rem;
+    border       : 2px solid rgba(60, 179, 114, 0.589);
+}
+
+.barra-busqueda .icono {
+    position: absolute;
+    top     : 2px;
+    left    : 20px;
+}
+
+
+/* Sombras */
+
+.sombra-1 {
+    box-shadow: 5px 5px 8px #a9a9a9
+}
+
+.sombra-2 {
+    box-shadow: 5px 5px 20px #a9a9a9
+}
+
+.sombra-3 {
+    box-shadow: 5px 5px 28px #a9a9a9
+}
+
+
+/* Decorado de textos */
+
+.texto-verde {
+    font-weight: 900 !important;
+    color      : MediumSeaGreen !important;
+}
+
+.texto-gris {
+    color: DarkGray !important;
+}
+
+.texto-rojo {
+    color: Crimson !important;
+}
+
+.texto-azulcl {
+    color: DeepSkyBlue !important;
+}
+
+.texto-azul {
+    color: DodgerBlue !important;
+}
+
+.texto-aqua {
+    color: MediumAquamarine !important;
+}
+
+.texto-blanco {
+    color: white !important;
+}
+
+.decorador-azul {
+    font-weight: 900 !important;
+    color      : #0e3163 !important;
+}
+
+.decorador-rojo {
+    font-weight: 900 !important;
+    color      : #ff0000 !important;
+}
+
+/* VISUAL (CURSOSR/OCULTAR/SWITCH/SLIDERS/CHECKBOX) */
+
+.subrayado {
+    position: relative !important;
+}
+
+.subrayado:hover::after {
+    width: 100% !important;
+    left : 0 !important;
+}
+
+.subrayado::after {
+    position        : absolute !important;
+    content         : "" !important;
+    width           : 0% !important;
+    height          : 2px !important;
+    background-color: MediumSeaGreen !important;
+    left            : 50% !important;
+    bottom          : -10px !important;
+    transition      : all 0.2s ease-in-out !important;
+}
+
+
+
+/* bordes */
+
+.border-1 {
+    border: 1px solid MediumSeaGreen !important;
+}
+
+.border-2 {
+    border: 2px solid MediumSeaGreen !important;
+}
+
+.border-3 {
+    border: 3px solid MediumSeaGreen !important;
+}
+
+.border-4 {
+    border: 4px solid MediumSeaGreen !important;
+}
+
+.border-5 {
+    border: 5px solid MediumSeaGreen !important;
+}
+
+
+/* Scroll */
+
+.scrol-50 {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    height    : 50px !important;
+}
+
+.scrol-max-50 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 50px;
+}
+
+.scrol-100 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 100px;
+}
+
+.scrol-max-100 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100px;
+}
+
+.scrol-150 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 150px;
+}
+
+.scrol-max-150 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 150px;
+}
+
+.scrol-200 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 200px;
+}
+
+.scrol-max-200 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 200px;
+}
+
+.scrol-250 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 250px;
+}
+
+.scrol-max-250 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 250px;
+}
+
+.scrol-300 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 300px;
+}
+
+.scrol-max-300 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 300px;
+}
+
+.scrol-350 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 350px;
+}
+
+.scrol-max-350 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 350px;
+}
+
+.scrol-400 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 400px;
+}
+
+.scrol-max-400 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 400px;
+}
+
+.scrol-450 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 450px;
+}
+
+.scrol-max-450 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 450px;
+}
+
+.scrol-500 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 500px;
+}
+
+.scrol-max-500 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 500px;
+}
+
+.scrol-550 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 550px;
+}
+
+.scrol-max-550 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 550px;
+}
+
+.scrol-600 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 600px;
+}
+
+.scrol-max-600 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 600px;
+}
+
+.scrol-650 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 650px;
+}
+
+.scrol-max-650 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 650px;
+}
+
+.scrol-700 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 700px;
+}
+
+.scrol-max-700 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 700px;
+}
+
+.scrol-750 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 750px;
+}
+
+.scrol-max-750 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 750px;
+}
+
+.scrol-800 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 800px;
+}
+
+.scrol-max-800 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 800px;
+}
+
+.scrol-850 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 850px;
+}
+
+.scrol-max-850 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 850px;
+}
+
+.scrol-900 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : 900px;
+}
+
+.scrol-max-900 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 900px;
+}
+
+
+/* ----- HEADER ----- */
+
+.hero {
+    background-color: #fff;
+    border-bottom   : 2px solid rgba(60, 179, 114, 0.589);
+}
+
+
+/* Botones */
+
+button.boton {
+    display            : inline-block;
+    font-weight        : 400;
+    white-space        : nowrap;
+    vertical-align     : middle;
+    -webkit-user-select: none;
+    -moz-user-select   : none;
+    -ms-user-select    : none;
+    user-select        : none;
+    border             : 1px solid transparent;
+    padding            : 0.25rem 0.5rem;
+    font-size          : 0.875rem;
+    line-height        : 1.5;
+    border-radius      : 0.2rem;
+    background-color   : transparent;
+}
+
+button.boton:hover {
+    cursor: pointer;
+}
+
+button.boton:active {
+    transform : translateY(2px);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+button.boton-circular {
+    width        : 40px;
+    height       : 40px;
+    padding      : 6px 0px;
+    border-radius: 50%;
+    text-align   : center;
+    font-size    : 1.2rem;
+    line-height  : 1.42857;
+}
+
+button.boton.boton-file {
+    overflow: hidden !important;
+    position: relative !important;
+}
+
+button.boton:not(:disabled):not(.disabled) {
+    cursor: pointer !important;
+}
+
+button.boton:disabled {
+    background    : none !important;
+    pointer-events: none !important;
+    opacity       : 0.6 !important;
+    color         : rgb(50, 51, 51) !important;
+    border-color  : rgb(53, 61, 58) !important;
+}
+
+button.btn.boton-file {
+    overflow: hidden !important;
+    position: relative !important;
+}
+
+.boton.boton-file>input[type="file"] {
+    background-color: #fff !important;
+    cursor          : inherit !important;
+    display         : block !important;
+    font-size       : 100px !important;
+    min-height      : 100% !important;
+    min-width       : 100% !important;
+    opacity         : 0 !important;
+    outline         : 0 !important;
+    position        : absolute !important;
+    right           : 0 !important;
+    text-align      : right !important;
+    top             : 0 !important;
+}
+
+button,
+input {
+    overflow: visible !important;
+}
+
+button.boton-aqua {
+    background: MediumAquamarine !important;
+    color     : white !important;
+}
+
+.botones button {
+    display        : inline-flex;
+    border-radius  : 100px;
+    align-items    : center;
+    justify-content: center;
+    margin-left    : 5px;
+    margin-right   : 5px;
+}
+
+.bg-boton {
+    background: #d3d4da;
+}
+
+.botones button:hover {
+    background: #e6e6e6;
+    color     : rgba(13, 199, 137, 0.7);
+}
+
+.botones .perfil {
+    height    : 40px;
+    padding   : 0px;
+    background: none;
+    min-width : max-content;
+}
+
+.botones .perfil img {
+    width        : 35px;
+    height       : 35px;
+    border-radius: 100px;
+    margin-right : 3px;
+}
+
+.boton.boton-file-perfil>input[type="file"] {
+    background-color: #fff;
+    cursor          : inherit;
+    font-size       : 0;
+    height          : 100%;
+    width           : 100%;
+    opacity         : 0;
+    outline         : 0;
+    position        : absolute;
+    right           : 0;
+    top             : 0;
+}
+
+
+/* Imagenes */
+
+.imgacoplelist {
+    width        : 50px !important;
+    border-radius: 80px !important;
+}
+
+.imgacople {
+    max-width : 100% !important;
+    max-height: 50px !important;
+}
+
+.upload {
+    display            : inline-block;
+    font-weight        : 400;
+    white-space        : nowrap;
+    vertical-align     : middle;
+    -webkit-user-select: none;
+    -moz-user-select   : none;
+    -ms-user-select    : none;
+    user-select        : none;
+    border             : 1px solid transparent;
+    padding            : .25rem .5rem;
+    font-size          : .875rem;
+    line-height        : 1.5;
+    border-radius      : .2rem;
+    background         : MediumAquamarine;
+    color              : white;
+}
+
+
+/* Subir */
+
+.subir {
+    margin  : 0;
+    opacity : 0;
+    outline : 0 none;
+    padding : 0;
+    position: absolute;
+    left    : 20px;
+    right   : 0px;
+}
+
+
+/* Visual */
+
+.cursor {
+    cursor: pointer;
+}
+
+.ocultar {
+    display: none;
+}
+
+.ancho {
+    width: 100% !important;
+}
+
+.iconTab {
+    margin-right: 10px !important;
+}
+
+
+/* Plano */
+
+div.section-plane-ticmap {
+    position        : absolute !important;
+    overflow        : hidden !important;
+    width           : 99.9vw !important;
+    height          : 93vh !important;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+div.section-plane-ticmap-find-stand {
+    position        : absolute !important;
+    overflow        : hidden !important;
+    width           : 98% !important;
+    height          : 76.4vh !important;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+
+/* Modal */
+
+.modal-backdrop {
+    z-index: -1 !important;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+@media screen and (max-width: 1100px) {
+    .modal-dialog {
+        max-width: 90%;
+        margin   : 1.75rem auto;
+    }
+}
+
+
+/* Componentes Angular */
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: #3cb371 !important;
+}
+
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: #a4edc5 !important;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+    background-color: #3cb371 !important;
+}
+
+.mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+    background-color: #a4edc5 !important;
+}
+
+.mat-accent .mat-slider-thumb {
+    background-color: #3cb371 !important;
+}
+
+.mat-accent .mat-slider-thumb-label {
+    background-color: #3cb371 !important;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle,
+.mat-radio-outer-circle {
+    border-color: #3cb371 !important;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+    background-color: #a4edc5 !important;
+}
+
+.button.boton:disabled {
+    background    : none !important;
+    pointer-events: none !important;
+    opacity       : 0.6 !important;
+    color         : rgb(50, 51, 51) !important;
+    border-color  : rgb(53, 61, 58) !important;
+}
+
+
+/* clases para linea de tiempo  ALE*/
+
+.lineatiempo {
+    padding : 0;
+    position: relative;
+}
+
+.lineatiempo::before {
+    border-radius   : 0.25rem;
+    background-color: #dee2e6;
+    bottom          : 0;
+    content         : "";
+    left            : 31px;
+    margin          : 0;
+    position        : absolute;
+    top             : 0;
+    width           : 4px;
+}
+
+.lineatiempo>div {
+    margin-bottom: 15px;
+    margin-right : 10px;
+    position     : relative;
+}
+
+.lineatiempo>div::after,
+.lineatiempo>div::before {
+    content: "";
+    display: table;
+}
+
+.lineatiempo>div>.fa,
+.lineatiempo>div>.fab,
+.lineatiempo>div>.fad,
+.lineatiempo>div>.fal,
+.lineatiempo>div>.far,
+.lineatiempo>div>.fas,
+.lineatiempo>div>.ion,
+.lineatiempo>div>.img,
+.lineatiempo>div>.svg-inline--fa {
+    color        : #fff;
+    border-radius: 100px;
+    font-size    : 16px;
+    height       : 30px;
+    left         : 18px;
+    line-height  : 30px;
+    position     : absolute;
+    text-align   : center;
+    top          : 0;
+    width        : 30px;
+}
+
+.foto-time {
+    color        : #fff;
+    border-radius: 100px;
+    font-size    : 16px;
+    height       : 30px;
+    left         : 18px;
+    line-height  : 30px;
+    position     : absolute;
+    text-align   : center;
+    top          : 0;
+    width        : 30px;
+}
+
+.lineatiempo>div>.lineatiempo-item {
+    margin-left: 60px;
+    position   : relative;
+}
+
+.bg-naranja {
+    background-color: #f2a368;
+}
+
+.bg-Turquoise {
+    background-color: Turquoise;
+}
+
+.bg-steelBlue {
+    background-color: steelBlue;
+}
+
+.bg-goldenrod {
+    background-color: goldenrod;
+}
+
+.bg-mediumSlateBlue {
+    background-color: mediumSlateBlue;
+}
+
+.bg-OliveDrab {
+    background-color: OliveDrab;
+}
+
+.card-naranja.card-outline {
+    border-top: 3px solid #f2a368;
+}
+
+.card-Turquoise.card-outline {
+    border-top: 3px solid Turquoise;
+}
+
+.card-steelBlue.card-outline {
+    border-top: 3px solid steelBlue;
+}
+
+.card-goldenrod.card-outline {
+    border-top: 3px solid goldenrod;
+}
+
+.card-mediumSlateBlue.card-outline {
+    border-top: 3px solid mediumSlateBlue;
+}
+
+.card-OliveDrab.card-outline {
+    border-top: 3px solid OliveDrab;
+}
+
+.card-negra.card-outline {
+    border-top: 3px solid #000000;
+}
+
+.card-doger.card-outline {
+    border-top: 3px solid dodgerblue;
+}
+
+.card-verde.card-outline {
+    border-top: 3px solid mediumseagreen;
+}
+
+.card-rojo.card-outline {
+    border-top: 3px solid maroon;
+}
+
+.card-amarillo.card-outline {
+    border-top: 3px solid #e0cb08;
+}
+
+.card-azul.card-outline {
+    border-top: 3px solid skyblue;
+}
+
+.bg-header-modal {
+    color     : #fff;
+    background: #343a40 linear-gradient(180deg, #52585d, #343a40) repeat-x !important;
+}
+
+.titulo-5 {
+    font-size: 0.6rem;
+}
+
+
+/*./clases para linea de tiempo */
+
+
+/* Clases  para el menu lateral */
+
+.dashboard-nav-item {
+    color              : #949292 !important;
+    margin-top         : 0 !important;
+    padding            : 10px 10px 10px 30px !important;
+    margin-right       : 30px !important;
+    display            : -webkit-box !important;
+    display            : -webkit-flex !important;
+    display            : -ms-flexbox !important;
+    display            : flex !important;
+    -webkit-box-align  : center !important;
+    -webkit-align-items: center !important;
+    -ms-flex-align     : center !important;
+    align-items        : center !important;
+    letter-spacing     : 0.02em !important;
+}
+
+.dashboard-nav-item i {
+    font-size   : 1.2rem !important;
+    margin-right: 30px !important;
+}
+
+.dashboard-nav-item:hover {
+    background   : rgba(97, 191, 207, 0.514) !important;
+    color        : mediumseagreen !important;
+    border-radius: 0px 40px 40px 0px !important;
+}
+
+.active-menu {
+    background-color: rgba(134, 191, 20, 0.514) !important;
+    color           : #2e4109 !important;
+    border-radius   : 0px 40px 40px 0px !important;
+}
+
+.absolute a {
+    width           : 100% !important;
+    position        : absolute !important;
+    background-color: red !important;
+    bottom          : 0 !important;
+    margin          : 0 auto !important;
+    color           : white !important;
+    text-decoration : none !important;
+    cursor          : pointer !important;
+}
+
+.cerrar-sesion:hover {
+    width           : 100% !important;
+    background-color: #970e0e !important;
+    border-radius   : 0px 0px 0px 0px !important;
+    color           : white !important;
+}
+
+
+/* clases para chat */
+
+.fondo-card {
+    background-image: url(./assets/img/chatIncidencia/fondoWhats.jpg) !important;
+}
+
+.chat-avatar {
+    float: right !important;
+}
+
+.chat-avatar .avatar {
+    width             : 30px !important;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3) !important;
+    box-shadow        : 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+.chat-body {
+    display : block !important;
+    margin  : 5px 30px 0 0;
+    overflow: hidden !important;
+}
+
+.chat-content {
+    position          : relative !important;
+    display           : block !important;
+    float             : right !important;
+    max-width         : 700px !important;
+    padding           : 8px 15px !important;
+    margin            : 0 20px 10px 0 !important;
+    clear             : both !important;
+    color             : #000000 !important;
+    background-color  : #d7fbbd !important;
+    border-radius     : 4px !important;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37) !important;
+    box-shadow        : 0 1px 4px 0 rgba(0, 0, 0, 0.37) !important;
+    text-align        : justify !important;
+}
+
+.chat-content:before {
+    position         : absolute !important;
+    top              : 10px !important;
+    right            : -10px !important;
+    width            : 0 !important;
+    height           : 0 !important;
+    content          : "" !important;
+    border           : 5px solid transparent !important;
+    border-left-color: #d7fbbd !important;
+}
+
+.chat-time {
+    display   : block !important;
+    margin-top: 8px !important;
+    color     : #89898f !important;
+}
+
+.chat-left .chat-avatar {
+    float: left !important;
+}
+
+.chat-left .chat-body {
+    margin-right: 0 !important;
+    margin-left : 30px !important;
+}
+
+.chat-left .chat-content {
+    float           : left !important;
+    margin          : 0 0 10px 20px !important;
+    color           : #000 !important;
+    background-color: #fff !important;
+}
+
+.chat-left .chat-content:before {
+    right             : auto !important;
+    left              : -10px !important;
+    border-right-color: #fff !important;
+    border-left-color : transparent !important;
+}
+
+.avatar img {
+    width        : 100% !important;
+    max-width    : 100% !important;
+    height       : auto !important;
+    border       : 0 none;
+    border-radius: 1000px !important;
+}
+
+.chat-avatar .avatar {
+    width: 30px !important;
+}
+
+.avatar {
+    position      : relative !important;
+    display       : inline-block !important;
+    width         : 40px !important;
+    white-space   : nowrap !important;
+    border-radius : 1000px !important;
+    vertical-align: bottom !important;
+}
+
+.camara {
+    font-size: 1.1rem !important;
+}
+
+.titlename {
+    font-size     : 0.7rem !important;
+    color         : #000 !important;
+    text-transform: capitalize !important;
+}
+
+.contenedor-img {
+    width      : 400px !important;
+    height     : auto !important;
+    padding-top: 8px !important;
+}
+
+.style-img {
+    width        : 100% !important;
+    display      : block !important;
+    border-radius: 10px !important;
+    height       : 250px !important;
+    object-fit   : cover !important;
+}
+
+.titulo-expositor {
+    font-size     : 0.875rem !important;
+    text-transform: uppercase !important;
+    font-weight   : 700 !important;
+    color         : mediumseagreen !important;
+}
+
+.mt-62 {
+    margin-top: 62px !important;
+}
+
+@media screen and (max-width: 600px) {
+    .mt-62 {
+        margin-top: 54px !important;
+    }
+}
+.fondoModal{
+    background-image: url(./assets/img/modal/fondomodal.png);
+  }

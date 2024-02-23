@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY st0 "fill:#FFC550;">
+	
+		<!ENTITY st1 "fill:#FFFFFF;stroke:#000000;stroke-width:0.7678;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;">
+	
+		<!ENTITY st2 "fill:#29235C;stroke:#000000;stroke-width:0.5035;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;">
+]>
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="80px" height="80px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<g>
+	<circle style="&st0;" cx="40" cy="40" r="36.8"/>
+	<g>
+		<polygon style="&st1;" points="51.3,59.4 74.4,41.7 39.3,34.5 5.6,43.8 		"/>
+		<path style="&st2;" d="M13.2,44.3V27.7c0,0,0-0.4,0.3-0.3l1.1,1.3c0,0-0.3,0.4-0.5,0l-0.5-0.5v16.1H13.2z"/>
+		<path style="&st2;" d="M50.2,55.8V39.2c0,0,0-0.4,0.3-0.3l1.1,1.3c0,0-0.3,0.4-0.5,0l-0.5-0.5v16.1H50.2z"/>
+		<path style="&st2;" d="M36.3,37.5V20.9c0,0,0-0.4,0.3-0.3l1.1,1.3c0,0-0.3,0.4-0.5,0l-0.5-0.5v16.1H36.3z"/>
+		<path style="&st2;" d="M67.1,44V27.4c0,0,0-0.4,0.3-0.3l1.1,1.3c0,0-0.3,0.4-0.5,0l-0.5-0.5V44H67.1z"/>
+	</g>
+</g>
+</svg>

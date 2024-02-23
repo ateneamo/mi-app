@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY st0 "fill:#662483;">
+	
+		<!ENTITY st1 "fill:#FFFFFF;stroke:#000000;stroke-width:0.7887;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;">
+]>
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="80px" height="80px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<g>
+	<circle style="&st0;" cx="40" cy="40" r="37.8"/>
+	<g>
+		<path style="&st1;" d="M25.2,68.2L19,63.9c-0.5-0.3-0.6-1-0.3-1.5l34.6-50.4c0.3-0.5,1-0.6,1.5-0.3L61,16c0.5,0.3,0.6,1,0.3,1.5
+			L26.7,67.9C26.4,68.4,25.7,68.5,25.2,68.2z"/>
+		
+			<rect x="51.1" y="14.8" transform="matrix(0.8247 0.5655 -0.5655 0.8247 19.2299 -28.7177)" style="&st1;" width="9.8" height="3.8"/>
+		<line style="&st1;" x1="57.9" y1="11.3" x2="56.6" y2="13.1"/>
+		<line style="&st1;" x1="60.5" y1="13" x2="59.2" y2="14.9"/>
+		
+			<rect x="19.1" y="61.4" transform="matrix(-0.8247 -0.5655 0.5655 -0.8247 7.883 129.1111)" style="&st1;" width="9.8" height="3.8"/>
+		<line style="&st1;" x1="22" y1="68.7" x2="23.3" y2="66.9"/>
+		<line style="&st1;" x1="19.4" y1="67" x2="20.7" y2="65.1"/>
+	</g>
+</g>
+</svg>

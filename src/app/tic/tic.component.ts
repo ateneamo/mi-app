@@ -1,11 +1,11 @@
-import { Component, Output,EventEmitter } from '@angular/core';
-
+import { Component, Output,EventEmitter, NgModule} from '@angular/core';
+import { MapComponent } from '../map/map.component';
 
 
 @Component({
   selector: 'app-tic',
   standalone: true,
-  imports: [],
+  imports: [MapComponent],
   templateUrl: './tic.component.html',
   styleUrl: './tic.component.css'
 })
