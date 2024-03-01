@@ -1,5 +1,49 @@
 
 <p>Mapa</p>
+<form>
+  x<input 
+  type="number" 
+  name="x"  
+  id="x"
+  [(ngModel)]="x" 
+  />
+
+y<input 
+type="number" 
+name="y"  
+id="y"
+[(ngModel)]="y" 
+/>
+z<input 
+type="number" 
+name="z"  
+id="z"
+[(ngModel)]="z" 
+/>
+color:<input 
+type="text" 
+name="colorInput"  
+id="colorInput"
+value="0x000000"
+[(ngModel)]="colorInput" 
+/>
+
+largo:<input 
+type="number" 
+name="largo"  
+id="largo"
+value="0x000000"
+[(ngModel)]="largo" 
+/>
+ancho:<input 
+type="number" 
+name="ancho"  
+id="ancho"
+value="1"
+[(ngModel)]="ancho" 
+/>
+</form>
+<button type="button" (click)=" createCube();">Agregar stand</button>
 <div class="engine-wrapper">
   <canvas #rendererCanvas id="renderCanvas"></canvas>
 </div>

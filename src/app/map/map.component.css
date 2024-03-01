@@ -1,8 +1,0 @@
-canvas {
-    border: solid 1px red;
-    position: fixed;
-  }
-  #rendererCanvas{
-    border: solid 4px red;
-height: 600px;
-  }
