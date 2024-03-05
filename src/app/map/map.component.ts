@@ -33,12 +33,7 @@ export class MapComponent implements OnInit {
     this.engServ.createScene(this.rendererCanvas);
     this.engServ.addControls();
     this.engServ.agregaMapa();
-    
-    //this.engServ.animate();
-    this.engServ.agregaStand(3,0.5,0,0x440000);
-    this.engServ.agregaStand(4,0.5,0,0x000034);
-    this.engServ.agregaStand(3,0.5,1,0x110000);
-    this.engServ.agregaStand(4,0.5,1,0x0000ff);
+       
     
     this.engServ.renderer.domElement.addEventListener('mouseenter', this.onMouseEnter.bind(this), false);
     this.engServ.renderer.domElement.addEventListener('click', this.onMouseClick.bind(this), false);
@@ -49,20 +44,16 @@ export class MapComponent implements OnInit {
   }
 
 
- public onMouseEnter():void {console.log("doble click");
+ public onMouseEnter():void {
 }
   public onMouseClick(event: MouseEvent) {
-    console.log("mouse down: ", event.clientX,event.clientY);
-    this.engServ.puntoInicial(event.clientX,event.clientY);
+    
+    this.engServ.dibujaStand(event.clientX,event.clientY);
   
   }
  public createCube():void{
   
   this.engServ.agregaStand2(this.x,this.y,this.z,parseInt(this.colorInput,16),this.largo,this.ancho);
  }
- public createCubeOnClick(x:number,z:number){
-    
-   //
- }
-
+ 
 }

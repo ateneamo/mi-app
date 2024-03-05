@@ -18,8 +18,11 @@ export class MapService implements OnDestroy {
   public mouseStartPosition= new THREE.Vector2(0,0);
   public mouseEndPosition= new THREE.Vector2(0,0);
 public rayCaster = new THREE.Raycaster();
-private geometry!:THREE.PlaneGeometry;
+private plano!:THREE.PlaneGeometry;
 private mapa!: THREE.Mesh;
+private banderaDibuja:number=0;
+private pointOfIntersection !: THREE.Vector3;
+
   public constructor(private ngZone: NgZone) {
   }
 
@@ -105,8 +108,8 @@ private mapa!: THREE.Mesh;
                   map: texture
                   });
 
-    this.geometry = new THREE.PlaneGeometry( 50, 50 );
-    this.mapa = new THREE.Mesh( this.geometry, img );
+    this.plano = new THREE.PlaneGeometry( 50, 50 );
+    this.mapa = new THREE.Mesh( this.plano, img );
     this.mapa.name="mapa";
     this.mapa.rotation.x = - Math.PI / 2;
     this.mapa.position.y = 0;
@@ -127,14 +130,14 @@ private mapa!: THREE.Mesh;
     console.log(this.stands);
   }
   public agregaStand2(x:number, y:number,z:number, color1:number, largo:number, ancho:number){
-    const geometry = new THREE.BoxGeometry(ancho, largo,1);
+    const geometry = new THREE.BoxGeometry(largo, 1,ancho);
     const material = new THREE.MeshBasicMaterial({color: color1});
    
     const temp: THREE.Mesh=new THREE.Mesh(geometry, material);
     this.stands.push(temp);
     temp.position.set(x,y,z);
     this.scene.add(temp);
-    console.log("agregando cubo:",x, y ,z,color1);
+    console.log("agregando cubo:",x, y ,z,largo, ancho);
     this.renderer.render(this.scene, this.camera);
     console.log(this.stands);
   }
@@ -152,28 +155,62 @@ private mapa!: THREE.Mesh;
   }
 
   
-  public puntoInicial(x:number, y:number)
+  public dibujaStand(x:number, y:number)
   {
-    this.mouse.x = x;
-    this.mouse.y = y;
-    console.log("inicio stand",this.mouse);
-    this.rayCaster.setFromCamera(this.mouse, this.camera);
-    const intersects= this.rayCaster.intersectObjects(this.scene.children);
-    for(let i=0; i<intersects.length;i++)
-    {
-        if (intersects[i].object.name==="mapa")
+    this.pointOfIntersection = new THREE.Vector3();
+    var res:boolean= false;
+    var rC :any;
+    this.mouse.x = (x / window.innerWidth) * 2 - 1;
+        this.mouse.y = -(y / window.innerHeight) * 2 + 1;
+        this.rayCaster.setFromCamera(this.mouse, this.camera);
+        rC=this.rayCaster.intersectObject(this.mapa, res);
+        //console.log("raycaster:",rC,rC[0].point.x, rC[0].point.y, rC[0].object.name);
+       
+    if (rC[0].object.name=="mapa"){ // se revisa que intersecte el plano
+        if(this.banderaDibuja==0  )
         {
-          this.mouseStartPosition.x=intersects[i].point.x;
-          this.mouseStartPosition.y=intersects[i].point.y;
-          console.log("inicio stand",this.mouseStartPosition);
-        }
-    }
+          
+            this.mouseStartPosition.x = rC[0].point.x;
+            this.mouseStartPosition.y = rC[0].point.z;
+            
+            this.banderaDibuja=1;
+          }
+          
+  
+   
+   
+        else if(this.banderaDibuja==1)
+        {
+          this.mouseEndPosition.x = rC[0].point.x;
+          this.mouseEndPosition.y = rC[0].point.z;
+          
+          
+          console.log("punto1:", this.mouseStartPosition,
+                      "punto2", this.mouseEndPosition,
+                      "ancho x", Math.abs(this.mouseEndPosition.x-this.mouseStartPosition.x),
+                      "largo z", Math.abs(this.mouseEndPosition.y-this.mouseStartPosition.y),
+                      this.banderaDibuja
+                      );
+          var largo=Math.abs(this.mouseEndPosition.y-this.mouseStartPosition.y)
+          var ancho=Math.abs(this.mouseEndPosition.x-this.mouseStartPosition.x)
+          
+          var medioy=(this.mouseEndPosition.y-this.mouseStartPosition.y)/2;
+          var mediox=(this.mouseEndPosition.x-this.mouseStartPosition.x)/2;
+          var signx:number=1;
+          var signy:number=1;
+          
+          
+          
+          this.agregaStand2(this.mouseStartPosition.x+mediox,0.5,this.mouseStartPosition.y+medioy,parseInt("0xb5b5b5",16),ancho,largo);
+                     this.banderaDibuja=0;
+        } 
+}
   }
 
   
-   public dibujaStand(x:number, y:number):void{
+   public modificaStatusStand(x:number, y:number):void{
       console.log(x,y);
-    //agregaStand2(x:number, y:number,z:number, 0xCEC9C8, largo:number, ancho:number)
+    
    } 
     
 }
